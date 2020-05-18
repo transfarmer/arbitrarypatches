@@ -1,0 +1,35 @@
+{
+    "schemaVersion": 1,
+    "id": "arbitrarypatches",
+    "version": "${version}",
+    "name": "arbitrary patches",
+    "description": "a collection of arbitrary patches",
+    "authors": [
+        "transfarmer"
+    ],
+    "contact": {
+        "sources": "https://github.com/transfarmer/arbitrarypatches"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/arbitrarypatches/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "transfarmer.arbitrarypatches.Main"
+        ],
+        "client": [
+            "transfarmer.arbitrarypatches.MainClient"
+        ],
+        "modmenu": [
+            "transfarmer.arbitrarypatches.client.config.ModMenuIntegration"
+        ]
+    },
+    "mixins": [
+        "arbitrarypatches.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.8.3+build.196",
+        "fabric": "*",
+        "minecraft": "1.15.2"
+    }
+}

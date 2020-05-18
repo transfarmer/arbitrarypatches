@@ -1,0 +1,7 @@
+{
+    "text.autoconfig.arbitrarypatches.title": "arbitrary patches",
+    "text.autoconfig.arbitrarypatches.option.hideRecipeBook": "hide recipe book",
+    "text.autoconfig.arbitrarypatches.option.tabClosesScreen": "TAB key closes screen",
+    "text.autoconfig.arbitrarypatches.option.hideRecipeBook.@Tooltip": "This option determines whether the recipe book in the survival inventory should be hidden or not.",
+    "text.autoconfig.arbitrarypatches.option.tabClosesScreen.@Tooltip": "This option determines whether the TAB key should close GUIs or not. It works only when TAB is set as the inventory key."
+}

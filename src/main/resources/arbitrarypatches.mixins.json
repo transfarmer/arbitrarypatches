@@ -1,0 +1,17 @@
+{
+    "required": true,
+    "package": "transfarmer.arbitrarypatches.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+        "block.MixinBlock",
+        "block.MixinSoulSandBlock",
+        "client.gui.screen.ingame.MixinContainerScreen",
+        "client.gui.screen.ingame.MixinInventoryScreen",
+        "client.gui.screen.ingame.MixinScreen"
+    ],
+    "client": [
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
