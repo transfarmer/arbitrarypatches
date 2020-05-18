@@ -28,14 +28,14 @@ dependencies {
 
     modCompile "net.fabricmc.fabric-api:fabric-api:${project.apiVersion}"
 
-    modImplementation "${project.farmerlib}"
-    include "${project.farmerlib}"
+    modImplementation "${project.autoConfig}"
+    include "${project.autoConfig}"
 
     modApi "${project.clothConfig}"
     include "${project.clothConfig}"
 
-    modImplementation "${project.autoConfig}"
-    include "${project.autoConfig}"
+    modImplementation "${project.farmerlib}"
+    include "${project.farmerlib}"
 
     modImplementation "${project.modMenu}"
 }
