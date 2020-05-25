@@ -7,7 +7,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.Screen;
 import transfarmer.arbitrarypatches.Main;
-import transfarmer.arbitrarypatches.config.ClientConfig;
+import transfarmer.arbitrarypatches.config.Configuration;
 
 @Environment(EnvType.CLIENT)
 public class ModMenuIntegration implements ModMenuApi {
@@ -18,6 +18,6 @@ public class ModMenuIntegration implements ModMenuApi {
 
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return (final Screen parent) -> AutoConfig.getConfigScreen(ClientConfig.class, parent).get();
+        return (final Screen parent) -> AutoConfig.getConfigScreen(Configuration.class, parent).get();
     }
 }

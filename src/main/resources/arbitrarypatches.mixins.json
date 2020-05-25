@@ -3,13 +3,17 @@
     "package": "transfarmer.arbitrarypatches.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
-        "block.MixinBlock",
-        "block.MixinSoulSandBlock",
-        "client.gui.screen.ingame.MixinContainerScreen",
-        "client.gui.screen.ingame.MixinInventoryScreen",
-        "client.gui.screen.ingame.MixinScreen"
+        "block.BlockMixin",
+        "block.SoulSandBlockMixin"
     ],
     "client": [
+        "client.gui.screen.GameMenuScreenMixin",
+        "client.gui.screen.ingame.ContainerScreenMixin",
+        "client.gui.screen.ingame.InventoryScreenMixin",
+        "client.gui.screen.ingame.ScreenMixin",
+        "client.gui.screen.TitleScreenMixin",
+        "client.gui.screen.options.SoundOptionsScreenMixin",
+        "client.gui.widget.SoundSliderWidgetMixin"
     ],
     "injectors": {
         "defaultRequire": 1

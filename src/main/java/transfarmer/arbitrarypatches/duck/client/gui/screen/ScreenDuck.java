@@ -1,4 +1,4 @@
-package transfarmer.arbitrarypatches.duck;
+package transfarmer.arbitrarypatches.duck.client.gui.screen;
 
 import net.minecraft.client.gui.widget.AbstractButtonWidget;
 

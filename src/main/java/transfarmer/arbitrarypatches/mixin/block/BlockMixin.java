@@ -6,18 +6,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.WorldView;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 
 @Mixin(Block.class)
-public abstract class MixinBlock<T> {
-    @Shadow
-    @Final
-    @Mutable
-    private float velocityMultiplier;
-
+public abstract class BlockMixin<T> {
     @SuppressWarnings("DeprecatedIsStillUsed")
     @Shadow
     @Deprecated
@@ -30,8 +23,8 @@ public abstract class MixinBlock<T> {
     @Shadow
     public abstract int getTickRate(final WorldView worldView);
 
-    protected void setVelocityMultiplier(final float velocityMultiplier) {
-        this.velocityMultiplier = velocityMultiplier;
+    @Shadow public float getVelocityMultiplier() {
+        return 0;
     }
 
     @SuppressWarnings("unchecked")

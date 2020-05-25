@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "arbitrarypatches",
-    "version": "${version}",
+    "version": "0.0.0",
     "name": "arbitrary patches",
     "description": "a collection of arbitrary patches",
     "authors": [
